@@ -6,6 +6,7 @@
   "author": "Raghib Najmi",
   "sideEffects": false,
   "type": "module",
+
   "scripts": {
     "build": "remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
@@ -65,5 +66,13 @@
   },
   "engines": {
     "node": ">=19.9.0"
+  },
+  "vercel": {
+    "builds": [
+      { "src": "build/**/*", "use": "@vercel/static" }
+    ]
   }
+
+  
 }
+
