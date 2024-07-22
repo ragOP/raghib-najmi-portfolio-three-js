@@ -22,7 +22,7 @@ import config from '~/config.json';
 import styles from './root.module.css';
 import './reset.module.css';
 import './global.module.css';
-
+// console.dir(object)
 export const links = () => [
   {
     rel: 'preload',
